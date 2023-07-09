@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingEnd="5dp"
+    tools:context=".MainActivity"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:autofillHints="0"
+            android:gravity="bottom"
+            android:hint="@string/_0"
+            android:inputType="none"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="40sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/calculation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:autofillHints="0"
+            android:gravity="bottom"
+            android:hint="@string/_0"
+            android:inputType="none"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="70sp"
+            tools:ignore="RtlCompat" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-40dp"
+        android:layout_height="5dp"
+        android:backgroundTint="@color/white"
+        android:background="?android:attr/listDivider" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:background="@color/black"
+        android:rowCount="5">
+
+        <Button
+            android:id="@+id/ac"
+            android:backgroundTint="@color/black"
+            android:textSize="35sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:textColor="#FF3D00"
+            android:text="@string/ac" />
+
+        <Button
+            android:id="@+id/percent"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:textColor="#FF3D00"
+            android:text="@string/percentage" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/left"
+            android:contentDescription="@string/todo1" />
+
+        <Button
+            android:id="@+id/divide"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:textColor="#FF3D00"
+            android:text="@string/divide" />
+
+        <Button
+            android:id="@+id/seven"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_7" />
+
+        <Button
+            android:id="@+id/eight"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_8" />
+
+        <Button
+            android:id="@+id/nine"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_9" />
+
+        <Button
+            android:id="@+id/multiple"
+            android:backgroundTint="@color/black"
+            android:textSize="35sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:textColor="#FF3D00"
+            android:text="@string/x" />
+
+        <Button
+            android:id="@+id/four"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_4" />
+
+        <Button
+            android:id="@+id/five"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_5" />
+
+        <Button
+            android:id="@+id/six"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_6" />
+
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/minus"
+            android:contentDescription="@string/todo1" />
+
+        <Button
+            android:id="@+id/one"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_1" />
+
+        <Button
+            android:id="@+id/two"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_2" />
+
+        <Button
+            android:id="@+id/three"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/_3" />
+
+        <Button
+            android:id="@+id/plus"
+            android:backgroundTint="@color/black"
+            android:textSize="50sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:textColor="#FF3D00"
+            android:text="@string/plus" />
+
+        <Button
+            android:id="@+id/zeroSingle"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/zeroSingle" />
+
+        <Button
+            android:id="@+id/zeroDouble"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="72dp"
+            android:text="@string/zeroDouble" />
+
+        <Button
+            android:id="@+id/dot"
+            android:backgroundTint="@color/black"
+            android:textSize="40sp"
+            android:layout_marginStart="10dp"
+            android:width="72dp"
+            android:height="70dp"
+            android:layout_marginTop="-10dp"
+            android:textStyle="bold"
+            android:text="@string/dot" />
+
+        <ImageView
+            android:id="@+id/equal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/equality"
+            android:contentDescription="@string/todo1" />
+
+    </GridLayout>
+
+
+</LinearLayout>
